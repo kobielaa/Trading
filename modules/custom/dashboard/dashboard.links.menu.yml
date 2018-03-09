@@ -1,0 +1,5 @@
+dashboard.form:
+  title: 'Dashboard'
+  description: 'Configure settings for dashboard links'
+  route_name: dashboard.form
+  parent: 'system.admin_config_development'

@@ -1,0 +1,6 @@
+firstmodule.page:
+  path: '/kobi'
+  defaults:
+    _content: 'Drupal\firstmodule\Controller\FirstmoduleController::kobi'
+  requirements:
+    _permission: 'view content'

@@ -1,0 +1,208 @@
+/* =======================================================================
+## ++ Globals
+========================================================================== */
+
+html {
+    font-size: 100%;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    color: $jasny-szary;
+    font-family: 'Raleway', sans-serif;
+    background: rgba(0, 0, 0, 0.01) !important;
+    line-height: 1.7;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: $jasny-szary;
+    &:hover {
+        color: $pastel!important;
+    }
+}
+
+
+/* =======================================================================
+## ++ Buttons
+========================================================================== */
+
+.custom-button {
+    margin: 25px 0 50px 0;
+    text-align: center;
+    a {
+        background: #27E1CE;
+        color: #fff;
+        border: 2px solid #27E1CE;
+        padding: 7px 20px;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        border-radius: 30px;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+    }
+}
+
+
+/* =======================================================================
+## ++ FOOTER
+========================================================================== */
+
+footer {
+    box-sizing: border-box;
+    padding: 30px 0;
+    background: #262626;
+    position: relative;
+    bottom: 0;
+    .follow {
+        margin-bottom: 0;
+        color: white;
+    }
+    .text-center {
+        text-align: center;
+    }
+    .designby {
+        color: $pastel;
+    }
+}
+
+
+/* =======================================================================
+## ++ PAGINATIONS
+========================================================================== */
+
+.pager {
+    text-align: center;
+    margin: 125px 0;
+    ul.pager__items {
+        display: block;
+        list-style-type: disc;
+        -webkit-margin-before: 1em;
+        -webkit-margin-after: 1em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        -webkit-padding-start: 40px;
+        li.pager__item--ellipsis {
+            display: none;
+        }
+        li.is-active {
+            background: $pastel;
+            a {
+                color: white;
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+        li {
+            list-style-type: none;
+            display: inline-block;
+            border-right: 1px solid #d7dadb;
+            transform: scale(1) rotate(19deg) translateX(0px) translateY(0px) skewX(-10deg) skewY(-20deg);
+            a {
+                padding: 1.1em 1.6em;
+                display: inline-block;
+                text-decoration: none;
+                color: #8b969c;
+                transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(20deg) skewY(0deg);
+            }
+        }
+    }
+}
+
+
+/* =======================================================================
+## ++ Forms
+========================================================================== */
+
+input[placeholder="Temat"] {
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+input[type="submit"] {
+    margin: 25px 0;
+}
+
+#edit-submit {
+    background: $pastel;
+    color: #fff;
+    border: none;
+    padding: 7px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    &:hover {
+        background: $kontrast;
+    }
+}
+
+#edit-preview {
+    display: none;
+}
+
+
+/* =======================================================================
+## ++ FONT AWESOME
+========================================================================== */
+
+.fa {
+    font-size: 30px;
+    padding: 15px 15px 30px 15px;
+    color: $pastel;
+    &:hover {
+        transform: scale(1.1);
+        color: $kontrast;
+    }
+}
+
+
+/* =======================================================================
+## ++ Cleafix
+========================================================================== */
+
+
+/* float clearing for IE6 */
+
+* html .clearfix {
+    height: 1%;
+    overflow: visible;
+}
+
+
+/* float clearing for IE7 */
+
+*+html .clearfix {
+    min-height: 1%;
+}
+
+
+/* float clearing for everyone else */
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    font-size: 0;
+}
+
+.clr {
+    clear: both;
+}

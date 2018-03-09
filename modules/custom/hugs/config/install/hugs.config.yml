@@ -1,0 +1,2 @@
+hugs:
+  default_count: $config->get('default_count')

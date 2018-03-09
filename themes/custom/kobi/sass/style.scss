@@ -1,0 +1,17 @@
+/* Setup */
+
+@import "reset";
+@import "mixins";
+@import "variables";
+@import "bootstrap";
+@import "bootstrap-grid";
+@import "fonts";
+@import "../../../../node_modules/font-awesome/css/font-awesome.css";
+@import "globals";
+
+/* WP parts */
+
+@import "header";
+@import "homepage";
+@import "sidebar";
+@import "footer";

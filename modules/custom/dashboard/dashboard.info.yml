@@ -1,0 +1,6 @@
+name: dashboard
+description: Make a site list to display in a iframe.
+core: 8.x
+package: custom
+type: module
+configure: dashboard.form

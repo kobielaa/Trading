@@ -1,0 +1,21 @@
+
+hugs.hug:
+  path: '/hugs/{to}/{from}/{count}'
+  defaults:
+    _controller: '\Drupal\hugs\Controller\HugsController::hug'
+    _title: 'hug!'
+    count: 0
+  requirements:
+    _permission: 'access content'
+    count: \d+
+
+hugs.config:
+  path: '/admin/config/hugs/config'
+  defaults:
+    _form: '\Drupal\hugs\Form\ConfigForm'
+    _title: 'ConfigForm'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+

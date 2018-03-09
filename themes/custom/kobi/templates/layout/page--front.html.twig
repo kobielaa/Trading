@@ -1,0 +1,36 @@
+{{ page.main_navigation}}
+
+<header class="main-header row justify-content-center align-items-center">
+    <h2>Trading is simply but not easy</h2>
+</header>
+
+<div class="container main-content">
+    <div class="latest-title">
+        <h2>Ostatnio dodadne artykuły</h2>
+        <p>Sprawdź czy od twojej ostatniej wizyty udało mi się coś naskrobać, bądź odnaleść w odmętach internetu coś czym chciałbym się z Tobą podzielić</p>
+        <div class="underscore">.</div>
+    </div>
+    <div class="latest-articles">
+        {{ page.latest_articles}}
+    </div>
+</div>
+
+<div class="parallax-section row justify-content-center align-items-center">
+    <p>"Success consists of going from failure to failure without loss of enthusiasm." – Winston Churchill</p>
+</div>
+
+<div class="container main-content">
+    <div class="latest-title-videos">
+        <h2>Ostatnio dodadne video</h2>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        <div class="underscore">.</div>
+    </div>
+    <div class="latest-videos">
+        {{ page.latest_videos}}
+    </div>
+
+</div>
+
+{% include directory ~ '/templates/partials/footer.html.twig' %} 
+
+

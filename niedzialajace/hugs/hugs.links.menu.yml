@@ -1,0 +1,7 @@
+hugs.config:
+  title: 'ConfigForm'
+  route_name: hugs.config
+  description: 'A description for the menu entry'
+  parent: system.admin_config_system
+  weight: 99
+

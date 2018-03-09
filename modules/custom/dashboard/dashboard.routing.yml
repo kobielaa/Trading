@@ -1,0 +1,14 @@
+dashboard.generate:
+  path: 'dashboard/generate/{paragraphs}/{phrases}'
+  defaults:
+    _controller: '\Drupal\dashboard\Controller\DashboardController::generate'
+  requirements:
+    _permission: 'generate lorem ipsum'
+
+dashboard.form:
+  path: '/admin/config/development/dashboard'
+  defaults:
+    _form: 'Drupal\dashboard\Form\DashboardForm'
+    _title: 'Dashboard settings'
+  requirements:
+    _permission: 'administer site configuration'

@@ -1,0 +1,8 @@
+name: firstmodule
+description: A simple hello word module
+core: 8.x
+package: custom
+dependencies:
+- node
+- block
+type: module
